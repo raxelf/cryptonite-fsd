@@ -3,7 +3,7 @@ import MarketCard from "./MarketCard";
 const MarketCardContainer = () => {
   return (
     <div className="overflow-x-auto scrollbar-none mt-4">
-      <div className="flex gap-4 pb-4 min-w-min">
+      <div className="flex gap-4 min-w-min">
         <div className="shrink-0 w-[calc(35%-8px)]">
           <MarketCard
             coin="Bitcoin"
