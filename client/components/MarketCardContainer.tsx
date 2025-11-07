@@ -10,6 +10,8 @@ const MarketCardContainer = () => {
             shortName="BTC"
             price="$ 38.769,45"
             image="/bitcoin.png"
+            status="down"
+            percent="3,7%"
           />
         </div>
         <div className="shrink-0 w-[calc(35%-8px)]">
@@ -18,6 +20,8 @@ const MarketCardContainer = () => {
             shortName="ETH"
             price="$ 2.769,85"
             image="/ethereum.png"
+            status="up"
+            percent="1,8%"
           />
         </div>
         <div className="shrink-0 w-[calc(35%-8px)]">
@@ -26,6 +30,8 @@ const MarketCardContainer = () => {
             shortName="NTC"
             price="$ 102,89"
             image="/nitecoin.png"
+            status="up"
+            percent="1,9%"
           />
         </div>
       </div>
