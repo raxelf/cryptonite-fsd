@@ -20,7 +20,7 @@ const SideBar = () => {
 
         {/* Navigation */}
         <NavigationList />
-        
+
         <div className="justify-center items-center flex flex-col mt-4">
           <Image
             src={"/ethCoin.png"}
@@ -33,7 +33,7 @@ const SideBar = () => {
             <p className="text-left text-md">
               Nitecoin: The New Crptocurrency in town!
             </p>
-            <button className="bg-primary w-full rounded-md py-1 cursor-pointer">
+            <button className="bg-primary w-full rounded-md py-1 cursor-pointer hover:bg-primary/75 delay-75 transition">
               Buy Now
             </button>
           </div>
