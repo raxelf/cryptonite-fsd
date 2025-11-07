@@ -1,4 +1,6 @@
+import MainHeader from "@/components/MainHeader";
 import SideBar from "@/components/SideBar";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -10,7 +12,9 @@ export default function Home() {
       </aside>
 
       {/* main content */}
-      <main className="col-span-10 w-full h-full overflow-y-auto"></main>
+      <main className="col-span-10 w-full h-full overflow-y-auto p-9">
+        <MainHeader />
+      </main>
     </div>
   );
 }
