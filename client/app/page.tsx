@@ -3,6 +3,7 @@
 import MainHeader from "@/components/MainHeader";
 import MarketCardContainer from "@/components/MarketCardContainer";
 import SideBar from "@/components/SideBar";
+import TradingViewChart from "@/components/TradingViewChart";
 import TransactionList from "@/components/TransactionList";
 import Image from "next/image";
 import { useState } from "react";
@@ -102,8 +103,8 @@ export default function Home() {
 
         {/* trading chart */}
         <section className="grid grid-cols-7 mt-6 gap-4">
-          <div className="col-span-4 w-full h-full bg-[#2A2A2D] p-4 rounded-xl">
-            a
+          <div className="col-span-4 w-full h-full">
+            <TradingViewChart />
           </div>
 
           {/* Exchange Card */}
