@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import NavigationList from "./NavigationList";
 
 const SideBar = () => {
   return (
     <div className="flex flex-col justify-between">
-      {/* upper part */}
+      {/* upper part (logo + nav) */}
       <div>
         {/* Logo */}
         <Link href={"/"} className="flex px-4 gap-2 items-center">
@@ -18,33 +19,8 @@ const SideBar = () => {
         </Link>
 
         {/* Navigation */}
-        <nav className="mt-4 px-4 flex flex-col gap-2">
-          {/* profile */}
-          <div className="flex gap-6 text-md items-center hover:bg-primary rounded-lg p-2 cursor-pointer">
-            <i className="ri-user-fill text-xl"></i>
-            <p>Profile</p>
-          </div>
-          <div className="flex justify-between text-md items-center bg-primary rounded-lg p-2 cursor-pointer">
-            <span className="flex items-center gap-6">
-              <i className="ri-dashboard-fill text-xl"></i>
-              <p>Dashboard</p>
-            </span>
-            <i className="ri-arrow-right-fill"></i>
-          </div>
-          <div className="flex gap-6 text-md items-center hover:bg-primary rounded-lg p-2 cursor-pointer">
-            <i className="ri-wallet-fill text-xl"></i>
-            <p>Wallet</p>
-          </div>
-          <div className="flex gap-6 text-md items-center hover:bg-primary rounded-lg p-2 cursor-pointer">
-            <i className="ri-arrow-left-right-line text-xl"></i>
-            <p>Trade</p>
-          </div>
-          <div className="flex gap-6 text-md items-center hover:bg-primary rounded-lg p-2 cursor-pointer">
-            <i className="ri-notification-3-fill text-xl"></i>
-            <p>Notifications</p>
-          </div>
-        </nav>
-
+        <NavigationList />
+        
         <div className="justify-center items-center flex flex-col mt-4">
           <Image
             src={"/ethCoin.png"}
@@ -64,7 +40,7 @@ const SideBar = () => {
         </div>
       </div>
 
-      {/* bottom part */}
+      {/* bottom part (setting / logout) */}
       <div className="mt-8 px-4 flex flex-col gap-2">
         <div className="flex gap-6 text-md items-center hover:bg-primary rounded-lg p-2 cursor-pointer">
           <i className="ri-settings-3-fill text-xl"></i>
