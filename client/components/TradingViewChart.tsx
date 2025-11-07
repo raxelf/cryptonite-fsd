@@ -8,6 +8,12 @@ const TradingViewChart = () => {
   useEffect(() => {
     if (!container.current) return;
 
+    // delete duplicate
+    const oldScript = container.current.querySelector("script");
+    if (oldScript) {
+      oldScript.remove();
+    }
+
     const script = document.createElement("script");
     script.src =
       "https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js";
