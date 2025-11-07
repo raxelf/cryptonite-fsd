@@ -5,6 +5,8 @@
   --foreground: #000000;
   --primary: #3e784e;
   --secondary: #50a542;
+  --up: #2fa15d;
+  --down: #A13D2F;
 }
 
 @theme inline {
@@ -12,6 +14,8 @@
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
+  --color-up: var(--up);
+  --color-down: var(--down);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,6 +24,8 @@
     --foreground: #ededed;
     --primary: #3e784e;
     --secondary: #50a542;
+    --up: #2fa15d;
+    --down: #A13D2F;
   }
 }
 
